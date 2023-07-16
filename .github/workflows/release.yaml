@@ -25,9 +25,9 @@ jobs:
         - name: Archive production artifacts
           uses: actions/upload-artifact@v3
           with:
-            name: grout-wm-artifacts
+            name: rust-bleh.zip
             path: |
-              target
+              rust-bleh.zip
         - name: Create release
           if: github.event_name == 'release'
           uses: softprops/action-gh-release@v1
