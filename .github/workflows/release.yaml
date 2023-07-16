@@ -20,7 +20,7 @@ jobs:
         - name: Create zip file
           run: |
             $outputPath = "${{ github.workspace }}\rust-bleh.zip"
-            Compress-Archive -Path "${{ github.workspace }}\target\release\rust-bleh.exe" -DestinationPath grout-wm.zip
+            Compress-Archive -Path "${{ github.workspace }}\target\release\rust-bleh.exe" -DestinationPath $outputPath
           shell: pwsh
         - name: Archive production artifacts
           uses: actions/upload-artifact@v3
