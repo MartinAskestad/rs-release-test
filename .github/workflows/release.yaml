@@ -1,8 +1,9 @@
- name: Build and Test
+name: Build and Release
 
 on:
   release:
     types: [created]
+  push:
 
 build:
     runs-on: windows-latest
